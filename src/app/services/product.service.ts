@@ -31,6 +31,10 @@ export class ProductService {
       map(response => response._embedded.productCategory)
     );
   }
+
+  searchProducts(theKeyword: string | null) {
+    
+  }
 }
 
 interface GetResponseProducts {
