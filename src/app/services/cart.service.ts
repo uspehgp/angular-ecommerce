@@ -83,7 +83,7 @@ export class CartService {
     }
   }
 
-  private remove(theCartItem: CartItem) {
+  remove(theCartItem: CartItem) {
     const itemIndex = this.cartItems.findIndex(tempCartItem => tempCartItem.id === theCartItem.id)
 
     if (itemIndex > -1){
