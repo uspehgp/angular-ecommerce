@@ -21,7 +21,8 @@ export class FormService {
   getCreditCardYears(): Observable<number[]> {
 
     let data: number[] = [];
-    for (let theYear = new Date().getFullYear(); theYear <= theYear + 10; theYear++) {
+    let startYear = new Date().getFullYear()
+    for (let theYear = new Date().getFullYear(); theYear < startYear + 10; theYear++) {
       data.push(theYear);
     }
     return of(data);
